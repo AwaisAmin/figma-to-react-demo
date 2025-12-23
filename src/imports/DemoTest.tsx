@@ -1541,7 +1541,7 @@ function DivCarousel() {
 
 function DivVideoTestimonials() {
   return (
-    <div className="content-stretch flex items-start overflow-clip relative shrink-0 w-[1920px]" data-name="div.video-testimonials">
+    <div className="content-stretch flex items-start overflow-clip relative shrink-0 w-full max-w-[1920px]" data-name="div.video-testimonials">
       <DivCarousel />
     </div>
   );
