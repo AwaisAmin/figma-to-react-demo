@@ -640,15 +640,15 @@ function Heading() {
 
 function Link() {
   return (
-    <div className="absolute left-0 right-0 top-[74px]" data-name="Link">
-      <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
+    <div className="absolute left-0 right-0 top-[74px] sm:relative sm:top-0" data-name="Link">
+      <div aria-hidden="true" className="absolute inset-0 pointer-events-none sm:hidden">
         <div className="absolute bg-[#f7f5f2] inset-0" />
         <div className="absolute inset-0 overflow-hidden">
           <img alt="" className="absolute h-[133.46%] left-0 max-w-none top-[-16.73%] w-full" src={imgLink} />
         </div>
       </div>
-      <div className="flex flex-row items-center justify-center size-full">
-        <div className="content-stretch flex items-center justify-center pb-[22px] pl-[809.59px] pr-[809.41px] pt-[21px] relative w-full">
+      <div className="flex flex-row items-center justify-center size-full sm:bg-[#f7f5f2]">
+        <div className="content-stretch flex items-center justify-center pb-[22px] pl-[809.59px] pr-[809.41px] pt-[21px] relative w-full sm:px-4 sm:py-8">
           <Heading />
         </div>
       </div>
@@ -1121,7 +1121,7 @@ function Link6() {
 
 function Section1() {
   return (
-    <div className="absolute border-[#e5e5e5] border-[1px_0px_0px] border-solid h-[1519px] left-1/2 top-[918px] translate-x-[-50%] w-[1180px]" data-name="Section">
+    <div className="absolute border-[#e5e5e5] border-[1px_0px_0px] border-solid h-[1519px] left-1/2 top-[918px] translate-x-[-50%] w-[1180px] sm:relative sm:left-0 sm:top-0 sm:translate-x-0 sm:w-full sm:h-auto sm:px-4 sm:py-8" data-name="Section">
       <DivRow />
       <Frame15 />
       <Link6 />
@@ -1379,8 +1379,8 @@ function Section2() {
 
 function Main() {
   return (
-    <div className="absolute bg-[#26262b] inset-[0_0_630.26px_0]" data-name="Main">
-      <div className="absolute flex inset-[-1472.5px_0_5797.65px_0] items-center justify-center">
+    <div className="absolute bg-[#26262b] inset-[0_0_630.26px_0] sm:relative sm:h-auto sm:min-h-screen" data-name="Main">
+      <div className="absolute flex inset-[-1472.5px_0_5797.65px_0] items-center justify-center sm:hidden">
         <div className="flex-none h-[873.59px] scale-y-[-100%] w-[1440px]">
           <Section />
         </div>
@@ -1549,7 +1549,7 @@ function DivVideoTestimonials() {
 
 function Section4() {
   return (
-    <div className="absolute content-stretch flex items-start justify-center left-0 right-0 top-[2934px]" data-name="Section" style={{ backgroundImage: "linear-gradient(rgb(38, 38, 43) 0%, rgb(38, 38, 43) 50%, rgb(254, 254, 254) 50%, rgb(254, 254, 254) 100%)" }}>
+    <div className="absolute content-stretch flex items-start justify-center left-0 right-0 top-[2934px] sm:relative sm:top-0 sm:w-full sm:px-4 sm:py-8" data-name="Section" style={{ backgroundImage: "linear-gradient(rgb(38, 38, 43) 0%, rgb(38, 38, 43) 50%, rgb(254, 254, 254) 50%, rgb(254, 254, 254) 100%)" }}>
       <DivVideoTestimonials />
     </div>
   );
@@ -1919,7 +1919,7 @@ function DivPageContentWrapper() {
 
 function Section5() {
   return (
-    <div className="absolute bg-[#fefefe] content-stretch flex items-start justify-center left-0 right-0 pb-0 pt-[120px] px-[330px] top-[3756px]" data-name="Section">
+    <div className="absolute bg-[#fefefe] content-stretch flex items-start justify-center left-0 right-0 pb-0 pt-[120px] px-[330px] top-[3756px] sm:relative sm:top-0 sm:w-full sm:px-4 sm:py-8" data-name="Section">
       <DivPageContentWrapper />
     </div>
   );
@@ -1927,7 +1927,7 @@ function Section5() {
 
 function Section6() {
   return (
-    <div className="absolute bg-[#fefefe] h-[88px] left-0 right-0 top-[4503px]" data-name="Section">
+    <div className="absolute bg-[#fefefe] h-[88px] left-0 right-0 top-[4503px] sm:relative sm:top-0 sm:w-full sm:h-auto sm:py-8" data-name="Section">
       <div className="flex flex-row justify-center size-full">
         <div className="size-full" />
       </div>
@@ -2021,7 +2021,7 @@ function DivJumbotronContent() {
 
 function Section7() {
   return (
-    <div className="absolute content-stretch flex items-center justify-center left-0 right-0 pb-[20px] pt-0 px-[40px] top-[4591px]" data-name="Section" style={{ backgroundImage: "linear-gradient(rgb(254, 254, 254) 0%, rgb(254, 254, 254) 50%, rgb(43, 45, 50) 50%, rgb(43, 45, 50) 100%)" }}>
+    <div className="absolute content-stretch flex items-center justify-center left-0 right-0 pb-[20px] pt-0 px-[40px] top-[4591px] sm:relative sm:top-0 sm:w-full sm:px-4 sm:py-8" data-name="Section" style={{ backgroundImage: "linear-gradient(rgb(254, 254, 254) 0%, rgb(254, 254, 254) 50%, rgb(43, 45, 50) 50%, rgb(43, 45, 50) 100%)" }}>
       <DivJumbotronContent />
     </div>
   );
@@ -2541,7 +2541,7 @@ function DivSiteFooterSub() {
 
 function DivSiteFooterContainer() {
   return (
-    <div className="content-stretch flex flex-col gap-[40px] items-center max-w-[1440px] px-[30px] py-0 relative shrink-0 w-[1440px]" data-name="div.site-footer__container">
+    <div className="content-stretch flex flex-col gap-[40px] items-center max-w-[1440px] px-[30px] py-0 relative shrink-0 w-[1440px] sm:w-full sm:max-w-full sm:px-0" data-name="div.site-footer__container">
       <DivRow5 />
       <DivSiteFooterSecondary />
       <DivSiteFooterSub />
@@ -2551,7 +2551,7 @@ function DivSiteFooterContainer() {
 
 function DivSiteFooter() {
   return (
-    <div className="bg-[#2b2d32] content-stretch flex items-start justify-center pb-[40px] pt-[60px] px-[240px] relative shrink-0 w-full" data-name="div.site-footer">
+    <div className="bg-[#2b2d32] content-stretch flex items-start justify-center pb-[40px] pt-[60px] px-[240px] relative shrink-0 w-full sm:px-4 sm:py-8" data-name="div.site-footer">
       <DivSiteFooterContainer />
     </div>
   );
@@ -2559,7 +2559,7 @@ function DivSiteFooter() {
 
 function Footer() {
   return (
-    <div className="absolute content-stretch flex items-start justify-center left-0 right-0 top-[5199px] bottom-0" data-name="Footer">
+    <div className="absolute content-stretch flex items-start justify-center left-0 right-0 top-[5199px] bottom-0 sm:relative sm:top-0 sm:w-full" data-name="Footer">
       <DivSiteFooter />
     </div>
   );
@@ -2567,7 +2567,7 @@ function Footer() {
 
 function DivLayout() {
   return (
-    <div className="absolute h-[5829px] left-0 top-0 w-full bg-white" data-name="div.layout">
+    <div className="absolute h-[5829px] sm:h-auto left-0 top-0 w-full sm:max-w-full bg-white sm:relative" data-name="div.layout">
       <Link />
       <Main />
       <Section4 />
@@ -2722,8 +2722,8 @@ function DivDNone1() {
 
 function DivSiteNavigationContent() {
   return (
-    <div className="absolute h-[40px] left-0 right-0 top-[17px] z-10 flex justify-center" data-name="div.site-navigation__content">
-      <div className="relative h-[40px] w-[1440px]">
+    <div className="absolute h-[40px] left-0 right-0 top-[17px] z-10 flex justify-center sm:px-4" data-name="div.site-navigation__content">
+      <div className="relative h-[40px] w-[1440px] sm:w-full sm:max-w-full">
         <LinkGoToHomepage />
         <DivSiteNavigationMenuSlider />
         <DivDNone1 />
@@ -2763,7 +2763,7 @@ function ButtonOpenIntercomMessenger() {
 export default function DemoTest() {
   return (
     <div className="w-full overflow-x-hidden" data-name="demo test">
-      <div className="relative w-full h-[5829px]">
+      <div className="relative w-full h-[5829px] sm:h-auto">
         <DivLayout />
         <DivSiteNavigationContent />
       </div>
