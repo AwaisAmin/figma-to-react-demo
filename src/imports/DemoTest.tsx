@@ -1140,7 +1140,7 @@ function DivRow2() {
 
 function DivExploreSetappInfo() {
   return (
-    <div className="absolute border-[#e5e5e5] border-[0px_0px_1px] border-solid h-[156.84px] left-[130px] top-[2669px] w-[1180px]" data-name="div.explore-setapp__info">
+    <div className="absolute border-[#e5e5e5] border-[0px_0px_1px] border-solid h-[156.84px] left-1/2 translate-x-[-50%] top-[2669px] w-[1180px]" data-name="div.explore-setapp__info">
       <DivRow2 />
     </div>
   );
@@ -1527,7 +1527,7 @@ function DivCarouselArrows() {
 
 function DivCarousel() {
   return (
-    <div className="h-[822px] overflow-clip relative shrink-0 w-[1395px]" data-name="div.carousel">
+    <div className="h-[822px] overflow-clip relative shrink-0 w-[1395px] mx-auto" data-name="div.carousel">
       <DivCarouselSlides />
       <DivCarouselPagination />
       <div className="absolute flex inset-[90px_-331px_708px_1275px] items-center justify-center">
@@ -1541,7 +1541,7 @@ function DivCarousel() {
 
 function DivVideoTestimonials() {
   return (
-    <div className="content-stretch flex items-start overflow-clip relative shrink-0 w-full max-w-[1920px]" data-name="div.video-testimonials">
+    <div className="content-stretch flex items-start justify-center overflow-clip relative shrink-0 w-full max-w-[1920px]" data-name="div.video-testimonials">
       <DivCarousel />
     </div>
   );
