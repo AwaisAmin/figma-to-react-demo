@@ -68,7 +68,7 @@ type BackgroundImageAndTextProps = {
 
 function BackgroundImageAndText({ text, additionalClassNames = "" }: BackgroundImageAndTextProps) {
   return (
-    <div className={clsx("absolute content-stretch flex items-center pb-[5.76px] pl-0 pt-[4px] top-1/2 translate-y-[-50%]", additionalClassNames)}>
+    <div className={clsx("absolute content-stretch flex items-center pb-[5.76px] pl-0 pt-[4px] top-1/2 translate-y-[-50%] cursor-pointer transition-all hover:opacity-70 hover:underline", additionalClassNames)}>
       <div className="flex flex-col font-['Avenir_Next:Medium',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-nowrap text-white tracking-[0.9px]">
         <p className="leading-[25.76px]">{text}</p>
       </div>
@@ -483,9 +483,9 @@ type ButtonBackgroundImageAndTextProps = {
 
 function ButtonBackgroundImageAndText({ text }: ButtonBackgroundImageAndTextProps) {
   return (
-    <div className="absolute bg-white content-stretch flex items-start justify-center left-0 pl-[32px] pr-[30.93px] py-[14px] rounded-[6px] top-0">
+    <div className="absolute bg-white content-stretch flex items-start justify-center left-0 pl-[32px] pr-[30.93px] py-[14px] rounded-[6px] top-0 cursor-pointer transition-all hover:bg-[#26262b]">
       <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[6px]" />
-      <div className="flex flex-col font-['Avenir_Next:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#26262b] text-[16px] text-center text-nowrap tracking-[1px]">
+      <div className="flex flex-col font-['Avenir_Next:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#26262b] text-[16px] text-center text-nowrap tracking-[1px] transition-colors hover:text-white">
         <p className="leading-[24px]">{text}</p>
       </div>
     </div>
@@ -712,7 +712,7 @@ function AppleSvg() {
 
 function Link1() {
   return (
-    <div className="absolute bg-white bottom-0 content-stretch flex items-center justify-center left-[229.93px] px-[15px] py-[10px] rounded-[6px] top-0 w-[62px]" data-name="Link">
+    <div className="absolute bg-white bottom-0 content-stretch flex items-center justify-center left-[229.93px] px-[15px] py-[10px] rounded-[6px] top-0 w-[62px] cursor-pointer transition-all hover:bg-[#26262b]" data-name="Link">
       <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[6px]" />
       <AppleSvg />
     </div>
@@ -729,7 +729,7 @@ function GoogleSvg() {
 
 function Link2() {
   return (
-    <div className="absolute bg-white bottom-0 content-stretch flex items-center justify-center left-[303.93px] px-[15px] py-[10px] rounded-[6px] top-0 w-[62px]" data-name="Link">
+    <div className="absolute bg-white bottom-0 content-stretch flex items-center justify-center left-[303.93px] px-[15px] py-[10px] rounded-[6px] top-0 w-[62px] cursor-pointer transition-all hover:bg-[#26262b]" data-name="Link">
       <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[6px]" />
       <GoogleSvg />
     </div>
@@ -1194,7 +1194,7 @@ function AppleSvg1() {
 
 function Link7() {
   return (
-    <div className="absolute bg-white bottom-0 content-stretch flex items-center justify-center left-[229.93px] px-[15px] py-[10px] rounded-[6px] top-0 w-[62px]" data-name="Link">
+    <div className="absolute bg-white bottom-0 content-stretch flex items-center justify-center left-[229.93px] px-[15px] py-[10px] rounded-[6px] top-0 w-[62px] cursor-pointer transition-all hover:bg-[#26262b]" data-name="Link">
       <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[6px]" />
       <AppleSvg1 />
     </div>
@@ -1211,7 +1211,7 @@ function GoogleSvg1() {
 
 function Link8() {
   return (
-    <div className="absolute bg-white bottom-0 content-stretch flex items-center justify-center left-[303.93px] px-[15px] py-[10px] rounded-[6px] top-0 w-[62px]" data-name="Link">
+    <div className="absolute bg-white bottom-0 content-stretch flex items-center justify-center left-[303.93px] px-[15px] py-[10px] rounded-[6px] top-0 w-[62px] cursor-pointer transition-all hover:bg-[#26262b]" data-name="Link">
       <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[6px]" />
       <GoogleSvg1 />
     </div>
@@ -1438,7 +1438,7 @@ function Component9Ed7D2Fe9Afc67Ab3C9FSvg() {
 
 function ButtonWatchNow() {
   return (
-    <div className="absolute bg-white bottom-[142px] content-stretch flex items-start left-[-320px] pl-[31.701px] pr-[29.339px] py-[29.025px] rounded-[37px] w-[74px]" data-name="Button - Watch now">
+    <div className="absolute bg-white bottom-[142px] content-stretch flex items-start left-[-320px] pl-[31.701px] pr-[29.339px] py-[29.025px] rounded-[37px] w-[74px] cursor-pointer transition-all hover:bg-[#26262b] hover:scale-110" data-name="Button - Watch now">
       <Component9Ed7D2Fe9Afc67Ab3C9FSvg />
     </div>
   );
@@ -1486,10 +1486,10 @@ function DivCarouselPagination() {
     <div className="absolute inset-[784.54px_0_25.46px_0]" data-name="div.carousel__pagination">
       <div className="flex flex-row justify-center size-full">
         <div className="content-stretch flex gap-[25px] items-start justify-center px-[898.5px] py-0 relative w-full">
-          <div className="bg-[#1d1d22] rounded-[6px] shrink-0 size-[12px]" data-name="Button" />
-          <div className="bg-[#d5d4d4] rounded-[6px] shrink-0 size-[12px]" data-name="Button" />
-          <div className="bg-[#d5d4d4] rounded-[6px] shrink-0 size-[12px]" data-name="Button" />
-          <div className="bg-[#d5d4d4] rounded-[6px] shrink-0 size-[12px]" data-name="Button" />
+          <div className="bg-[#1d1d22] rounded-[6px] shrink-0 size-[12px] cursor-pointer transition-transform hover:scale-125" data-name="Button" />
+          <div className="bg-[#d5d4d4] rounded-[6px] shrink-0 size-[12px] cursor-pointer transition-all hover:bg-[#1d1d22] hover:scale-125" data-name="Button" />
+          <div className="bg-[#d5d4d4] rounded-[6px] shrink-0 size-[12px] cursor-pointer transition-all hover:bg-[#1d1d22] hover:scale-125" data-name="Button" />
+          <div className="bg-[#d5d4d4] rounded-[6px] shrink-0 size-[12px] cursor-pointer transition-all hover:bg-[#1d1d22] hover:scale-125" data-name="Button" />
         </div>
       </div>
     </div>
@@ -1498,7 +1498,7 @@ function DivCarouselPagination() {
 
 function ButtonPreviousSlide() {
   return (
-    <div className="content-stretch flex items-start justify-center opacity-[0.49] relative w-[14px]" data-name="Button - Previous slide">
+    <div className="content-stretch flex items-start justify-center opacity-[0.49] relative w-[14px] cursor-pointer transition-opacity hover:opacity-100" data-name="Button - Previous slide">
       <F177202F658078Cd2E7BSvgBackgroundImage />
     </div>
   );
@@ -1506,7 +1506,7 @@ function ButtonPreviousSlide() {
 
 function ButtonPreviousSlide1() {
   return (
-    <div className="content-stretch flex items-start justify-center opacity-[0.49] relative shrink-0 w-[14px]" data-name="Button - Previous slide">
+    <div className="content-stretch flex items-start justify-center opacity-[0.49] relative shrink-0 w-[14px] cursor-pointer transition-opacity hover:opacity-100" data-name="Button - Previous slide">
       <F177202F658078Cd2E7BSvgBackgroundImage />
     </div>
   );
@@ -1655,7 +1655,7 @@ function DivRow3() {
 
 function ButtonPreviousSlide2() {
   return (
-    <div className="content-stretch flex items-start justify-center opacity-60 relative w-[14px]" data-name="Button - Previous slide">
+    <div className="content-stretch flex items-start justify-center opacity-60 relative w-[14px] cursor-pointer transition-opacity hover:opacity-100" data-name="Button - Previous slide">
       <Helper477960D59Edce9240F56SvgBackgroundImage />
     </div>
   );
@@ -1663,7 +1663,7 @@ function ButtonPreviousSlide2() {
 
 function ButtonPreviousSlide3() {
   return (
-    <div className="content-stretch flex items-start justify-center opacity-60 relative shrink-0 w-[14px]" data-name="Button - Previous slide">
+    <div className="content-stretch flex items-start justify-center opacity-60 relative shrink-0 w-[14px] cursor-pointer transition-opacity hover:opacity-100" data-name="Button - Previous slide">
       <Helper477960D59Edce9240F56SvgBackgroundImage />
     </div>
   );
@@ -1888,12 +1888,12 @@ function DivCarouselSlides1() {
 function DivCarouselPagination1() {
   return (
     <div className="absolute content-stretch flex gap-[25px] inset-[525.43px_0_25.01px_0] items-start justify-center px-[491.5px] py-0" data-name="div.carousel__pagination">
-      <div className="bg-[#1d1d22] rounded-[6px] shrink-0 size-[12px]" data-name="Button" />
-      <div className="bg-[#d5d4d4] rounded-[6px] shrink-0 size-[12px]" data-name="Button" />
-      <div className="bg-[#d5d4d4] rounded-[6px] shrink-0 size-[12px]" data-name="Button" />
-      <div className="bg-[#d5d4d4] rounded-[6px] shrink-0 size-[12px]" data-name="Button" />
-      <div className="bg-[#d5d4d4] rounded-[6px] shrink-0 size-[12px]" data-name="Button" />
-      <div className="bg-[#d5d4d4] rounded-[6px] shrink-0 size-[12px]" data-name="Button" />
+      <div className="bg-[#1d1d22] rounded-[6px] shrink-0 size-[12px] cursor-pointer transition-transform hover:scale-125" data-name="Button" />
+      <div className="bg-[#d5d4d4] rounded-[6px] shrink-0 size-[12px] cursor-pointer transition-all hover:bg-[#1d1d22] hover:scale-125" data-name="Button" />
+      <div className="bg-[#d5d4d4] rounded-[6px] shrink-0 size-[12px] cursor-pointer transition-all hover:bg-[#1d1d22] hover:scale-125" data-name="Button" />
+      <div className="bg-[#d5d4d4] rounded-[6px] shrink-0 size-[12px] cursor-pointer transition-all hover:bg-[#1d1d22] hover:scale-125" data-name="Button" />
+      <div className="bg-[#d5d4d4] rounded-[6px] shrink-0 size-[12px] cursor-pointer transition-all hover:bg-[#1d1d22] hover:scale-125" data-name="Button" />
+      <div className="bg-[#d5d4d4] rounded-[6px] shrink-0 size-[12px] cursor-pointer transition-all hover:bg-[#1d1d22] hover:scale-125" data-name="Button" />
     </div>
   );
 }
@@ -1973,8 +1973,8 @@ function DivSignupPrice() {
 
 function Button() {
   return (
-    <div className="bg-[#26262b] content-stretch flex items-start pl-[31px] pr-[31.41px] py-[13px] relative rounded-[6px] shrink-0" data-name="Button">
-      <div className="flex flex-col font-['Avenir_Next:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-center text-nowrap text-white tracking-[1px]">
+    <div className="bg-[#26262b] content-stretch flex items-start pl-[31px] pr-[31.41px] py-[13px] relative rounded-[6px] shrink-0 cursor-pointer transition-all hover:bg-white" data-name="Button">
+      <div className="flex flex-col font-['Avenir_Next:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-center text-nowrap text-white tracking-[1px] transition-colors hover:text-black">
         <p className="leading-[24px]">Get started now</p>
       </div>
     </div>
@@ -2139,7 +2139,7 @@ function Svg6() {
 
 function ButtonSubscribeForNewsletters() {
   return (
-    <div className="bg-white content-stretch flex items-center mr-[-2px] pb-[18.11px] pt-[18.12px] px-[23px] relative rounded-br-[6px] rounded-tr-[6px] shrink-0" data-name="Button - Subscribe for newsletters">
+    <div className="bg-white content-stretch flex items-center mr-[-2px] pb-[18.11px] pt-[18.12px] px-[23px] relative rounded-br-[6px] rounded-tr-[6px] shrink-0 cursor-pointer transition-all hover:bg-[#26262b]" data-name="Button - Subscribe for newsletters">
       <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-br-[6px] rounded-tr-[6px]" />
       <Svg6 />
     </div>
@@ -2182,28 +2182,28 @@ function List1() {
     <div className="basis-0 grow max-w-[229.99977111816406px] min-h-px min-w-px relative shrink-0" data-name="List">
       <div className="max-w-[inherit] size-full">
         <div className="content-stretch flex flex-col font-['Avenir_Next:Regular',sans-serif] gap-[0.5px] items-start leading-[0] max-w-[inherit] not-italic pb-[65px] pl-[10px] pr-[93px] pt-[0.5px] relative text-[16px] text-nowrap text-white w-full">
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Home</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">How It Works</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">All Apps</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Pricing</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Setapp for Teams</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Blog</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Podcast</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Download</p>
           </div>
         </div>
@@ -2217,34 +2217,34 @@ function List2() {
     <div className="basis-0 grow max-w-[229.99977111816406px] min-h-px min-w-px relative shrink-0" data-name="List">
       <div className="max-w-[inherit] size-full">
         <div className="content-stretch flex flex-col font-['Avenir_Next:Regular',sans-serif] gap-[0.5px] items-start leading-[0] max-w-[inherit] not-italic pb-0 pl-[10px] pr-[14px] pt-[0.5px] relative text-[16px] text-nowrap text-white w-full">
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">About</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Support</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Education Discount</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Family Plan</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">For Developers</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Gift Cards</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Redeem Card or Code</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Setapp Reviews</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Affiliate Program</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Mac Developer Survey 2023</p>
           </div>
         </div>
@@ -2255,7 +2255,7 @@ function List2() {
 
 function ItemLink() {
   return (
-    <div className="content-stretch flex flex-col gap-[0.5px] items-start relative shrink-0" data-name="Item ⏵ Link">
+    <div className="content-stretch flex flex-col gap-[0.5px] items-start relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline" data-name="Item ⏵ Link">
       <div className="flex flex-col justify-center relative shrink-0">
         <p className="leading-[32px] text-nowrap">Fix macOS Ventura</p>
       </div>
@@ -2271,20 +2271,20 @@ function List3() {
     <div className="basis-0 grow max-w-[229.99977111816406px] min-h-px min-w-px relative shrink-0" data-name="List">
       <div className="max-w-[inherit] size-full">
         <div className="content-stretch flex flex-col font-['Avenir_Next:Regular',sans-serif] gap-[0.5px] items-start leading-[0] max-w-[inherit] not-italic pb-[97.5px] pl-[10px] pr-[14px] pt-[0.5px] relative text-[16px] text-nowrap text-white w-full">
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px]">Getting started with Setapp</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px]">Remote access to other Mac</p>
           </div>
           <ItemLink />
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Best productivity apps</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Best YouTube downloaders</p>
           </div>
-          <div className="flex flex-col justify-center relative shrink-0">
+          <div className="flex flex-col justify-center relative shrink-0 cursor-pointer transition-all hover:opacity-70 hover:underline">
             <p className="leading-[32px] text-nowrap">Uninstall apps</p>
           </div>
         </div>
@@ -2434,7 +2434,7 @@ function Frame10() {
 
 function ItemLinkSetappOnFacebookSvg1() {
   return (
-    <div className="content-stretch flex items-start justify-center opacity-[0.45] overflow-clip relative shrink-0 w-[26px]" data-name="Item ⏵ Link - Setapp on Facebook ⏵ SVG">
+    <div className="content-stretch flex items-start justify-center opacity-[0.45] overflow-clip relative shrink-0 w-[26px] cursor-pointer transition-opacity hover:opacity-100" data-name="Item ⏵ Link - Setapp on Facebook ⏵ SVG">
       <Frame10 />
     </div>
   );
@@ -2450,7 +2450,7 @@ function Frame11() {
 
 function ItemLinkSetappOnTwitterSvg1() {
   return (
-    <div className="content-stretch flex items-start justify-center opacity-[0.45] overflow-clip relative shrink-0 w-[26px]" data-name="Item ⏵ Link - Setapp on Twitter ⏵ SVG">
+    <div className="content-stretch flex items-start justify-center opacity-[0.45] overflow-clip relative shrink-0 w-[26px] cursor-pointer transition-opacity hover:opacity-100" data-name="Item ⏵ Link - Setapp on Twitter ⏵ SVG">
       <Frame11 />
     </div>
   );
@@ -2466,7 +2466,7 @@ function Frame12() {
 
 function ItemLinkSetappOnInstagramSvg() {
   return (
-    <div className="content-stretch flex items-start justify-center opacity-[0.45] overflow-clip relative shrink-0 w-[26px]" data-name="Item ⏵ Link - Setapp on Instagram ⏵ SVG">
+    <div className="content-stretch flex items-start justify-center opacity-[0.45] overflow-clip relative shrink-0 w-[26px] cursor-pointer transition-opacity hover:opacity-100" data-name="Item ⏵ Link - Setapp on Instagram ⏵ SVG">
       <Frame12 />
     </div>
   );
@@ -2703,9 +2703,9 @@ function DivSiteNavigationMenuSlider() {
 
 function Button1() {
   return (
-    <div className="content-stretch flex items-start pb-[6.5px] pl-[23px] pr-[23.03px] pt-[5.5px] relative rounded-[6px] shrink-0" data-name="Button">
+    <div className="content-stretch flex items-start pb-[6.5px] pl-[23px] pr-[23.03px] pt-[5.5px] relative rounded-[6px] shrink-0 cursor-pointer transition-all hover:bg-white" data-name="Button">
       <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[6px]" />
-      <div className="flex flex-col font-['Avenir_Next:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-center text-nowrap text-white tracking-[1px]">
+      <div className="flex flex-col font-['Avenir_Next:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-center text-nowrap text-white tracking-[1px] transition-colors hover:text-black">
         <p className="leading-[20.005px]">Try free</p>
       </div>
     </div>
@@ -2754,7 +2754,7 @@ function Svg9() {
 
 function ButtonOpenIntercomMessenger() {
   return (
-    <div className="fixed bg-[#0071b2] content-stretch flex items-start justify-center right-[40px] max-h-[48px] max-w-[48px] p-[12px] rounded-[24px] shadow-[0px_1px_6px_0px_rgba(0,0,0,0.06),0px_2px_32px_0px_rgba(0,0,0,0.16)] bottom-[40px] w-[48px] z-50" data-name="Button - Open Intercom Messenger">
+    <div className="fixed bg-[#0071b2] content-stretch flex items-start justify-center right-[40px] max-h-[48px] max-w-[48px] p-[12px] rounded-[24px] shadow-[0px_1px_6px_0px_rgba(0,0,0,0.06),0px_2px_32px_0px_rgba(0,0,0,0.16)] bottom-[40px] w-[48px] z-50 cursor-pointer transition-all hover:bg-[#005a8e] hover:scale-110 hover:shadow-[0px_4px_12px_0px_rgba(0,0,0,0.12),0px_4px_40px_0px_rgba(0,0,0,0.24)]" data-name="Button - Open Intercom Messenger">
       <Svg9 />
     </div>
   );
